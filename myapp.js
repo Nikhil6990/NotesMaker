@@ -102,8 +102,8 @@ search.addEventListener("input",function(){
        let inputval=search.value.toLowerCase();
        let mycards=document.getElementsByClassName("mycard");
        Array.from(mycards).forEach(function(ele){
-           let cardtxt=ele.getElementsByTagName("p")[0].innerText;
-           let cardtitle=ele.getElementsByTagName("h5")[0].innerText;
+           let cardtxt=ele.getElementsByTagName("p")[0].innerText.toLowerCase();
+           let cardtitle=ele.getElementsByTagName("h5")[0].innerText.toLowerCase();
            if(cardtxt.includes(inputval) || cardtitle.includes(inputval)){
                ele.style.display="block";
            }
