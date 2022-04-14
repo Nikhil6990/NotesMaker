@@ -25,8 +25,10 @@ mybtn.addEventListener('click',function(e){
     localStorage.setItem("notestitle",JSON.stringify(notestitleobj));
     localStorage.setItem("notestext",JSON.stringify(notestextobj));
 
-    mytitle="";
-    mytext="";
+    mytitle.value="";
+    mytext.value="";
+
+    
 
     showNotes();
 
