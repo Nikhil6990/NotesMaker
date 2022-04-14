@@ -99,7 +99,7 @@ function deleteNode(index){
 let search=document.getElementById("searchNotes");
 
 search.addEventListener("input",function(){
-       let inputval=search.value;
+       let inputval=search.value.toLowerCase();
        let mycards=document.getElementsByClassName("mycard");
        Array.from(mycards).forEach(function(ele){
            let cardtxt=ele.getElementsByTagName("p")[0].innerText;
